@@ -27,12 +27,12 @@ void loop()
     for (int i = 0; i < reg.bandwidth() * 8; ++i)
     {
       /* Check only few specific inputs */
-      if ((i == 0   || // 1A
-           i == 6   || // 1G
+      if ((i == 0   || // 3A
+           i == 6   || // 3G
            i == 9   || // 2B
            i == 13  || // 2F
-           i == 18  || // 3C
-           i == 20) && // 3E
+           i == 18  || // 1C
+           i == 20) && // 1E
           (changed & 1))
       {
         Serial.print("#");
