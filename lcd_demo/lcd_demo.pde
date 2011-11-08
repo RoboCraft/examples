@@ -93,7 +93,7 @@ void showArnie()
   lcd.blink(); // make it blink
   delay(1000);
   
-  lcd.write(0); // enter the Arnie
+  lcd.write((uint8_t)0); // enter the Arnie
   lcd.write(' ');
   delay(1000);
   
